@@ -96,8 +96,9 @@ app.delete("/student/delete/:id", (req, res) => {
 
 // x-www-urlencoded
 app.post("/product/add", (req, res) => {
-    console.log(req.body);
     res.status(200);
+    console.log(req.body);
+    res.json(req.body);
     res.end();
 });
 
